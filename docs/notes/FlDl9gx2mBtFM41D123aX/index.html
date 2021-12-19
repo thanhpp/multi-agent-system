@@ -1,0 +1,403 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="icon" href="/favicon.ico"/><title>C2-IntelligentAgents</title><meta name="robots" content="index,follow"/><meta name="googlebot" content="index,follow"/><meta name="description" content="Personal knowledge space"/><meta property="og:title" content="C2-IntelligentAgents"/><meta property="og:description" content="Personal knowledge space"/><meta property="og:url" content="https://thanhpp.github.io/multi-agent-system/notes/FlDl9gx2mBtFM41D123aX/"/><meta property="og:type" content="article"/><meta property="article:published_time" content="12/18/2021"/><meta property="article:modified_time" content="12/19/2021"/><link rel="canonical" href="https://thanhpp.github.io/multi-agent-system/notes/FlDl9gx2mBtFM41D123aX/"/><meta name="next-head-count" content="14"/><link rel="preload" href="/multi-agent-system/_next/static/css/d5b399b07723b93a.css" as="style"/><link rel="stylesheet" href="/multi-agent-system/_next/static/css/d5b399b07723b93a.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/multi-agent-system/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script><script src="/multi-agent-system/_next/static/chunks/webpack-4b02ecd94e394484.js" defer=""></script><script src="/multi-agent-system/_next/static/chunks/framework-dc33c0b5493501f0.js" defer=""></script><script src="/multi-agent-system/_next/static/chunks/main-4871c3831fd32318.js" defer=""></script><script src="/multi-agent-system/_next/static/chunks/pages/_app-eae64b95f42ebf74.js" defer=""></script><script src="/multi-agent-system/_next/static/chunks/155-55f0622fbbf90797.js" defer=""></script><script src="/multi-agent-system/_next/static/chunks/pages/notes/%5Bid%5D-f78f1cc50d3f94ac.js" defer=""></script><script src="/multi-agent-system/_next/static/8UI4sNPe3MpBm8bWUHKqZ/_buildManifest.js" defer=""></script><script src="/multi-agent-system/_next/static/8UI4sNPe3MpBm8bWUHKqZ/_ssgManifest.js" defer=""></script><script src="/multi-agent-system/_next/static/8UI4sNPe3MpBm8bWUHKqZ/_middlewareManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><section class="ant-layout" style="width:100%;min-height:100%"><header class="ant-layout-header" style="position:fixed;isolation:isolate;z-index:1;width:100%;border-bottom:1px solid #d4dadf;height:64px;padding:0 24px 0 2px"><div class="ant-row ant-row-center" style="max-width:992px;justify-content:space-between;margin:0 auto"><div class="ant-col"></div><div class="ant-col gutter-row ant-col-xs-0 ant-col-sm-20 ant-col-md-20 ant-col-lg-19"></div><div style="margin-left:4px;display:none;align-items:center;justify-content:center" class="ant-col ant-col-xs-4 ant-col-sm-4 ant-col-md-0 ant-col-lg-0"><span role="img" aria-label="menu" style="font-size:24px" tabindex="-1" class="anticon anticon-menu"><svg viewBox="64 64 896 896" focusable="false" data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></span></div></div></header><section class="ant-layout site-layout" style="margin-top:64px"><section class="ant-layout site-layout" style="flex-direction:row"><section class="ant-layout site-layout-sidebar" style="flex:0 0 auto;width:calc((100% - 992px) / 2 + 200px);min-width:200px;padding-left:calc((100% - 992px) / 2)"><aside class="ant-layout-sider ant-layout-sider-dark" style="position:fixed;overflow:auto;height:calc(100vh - 64px);flex:0 0 200px;max-width:200px;min-width:200px;width:200px"><div class="ant-layout-sider-children"></div></aside></section><section class="ant-layout side-layout-main" style="max-width:1200px;display:initial"><main class="ant-layout-content main-content" role="main" style="padding:0 24px"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row" style="margin-left:-10px;margin-right:-10px"><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-24 ant-col-md-18"><div><h1 id="c2-intelligentagents"><a aria-hidden="true" class="anchor-heading" href="#c2-intelligentagents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>C2-IntelligentAgents</h1>
+<ul>
+<li><a href="#autonomy">Autonomy</a></li>
+<li><a href="#agents-and">Agents and</a>
+<ul>
+<li><a href="#objects">Objects</a></li>
+<li><a href="#expert-systems">Expert systems</a></li>
+<li><a href="#intelligent-agents-and-ai">Intelligent agents and AI</a></li>
+</ul>
+</li>
+<li><a href="#environment-properties">Environment Properties</a></li>
+<li><a href="#intelligent-agents">Intelligent agents</a>
+<ul>
+<li><a href="#reactive-environment-aware">Reactive (environment aware)</a></li>
+<li><a href="#pro-active">Pro-active</a></li>
+<li><a href="#social-ability">Social ability</a></li>
+<li><a href="#other-properties">Other properties</a></li>
+</ul>
+</li>
+<li><a href="#intentional-system">Intentional System</a></li>
+<li><a href="#abstract-architecture">Abstract architecture</a>
+<ul>
+<li><a href="#environments">Environments</a></li>
+<li><a href="#agents">Agents</a></li>
+<li><a href="#system">System</a></li>
+</ul>
+</li>
+<li><a href="#intelligent-agent-properties">Intelligent agent properties</a>
+<ul>
+<li><a href="#agents-with-states">Agents with States</a></li>
+</ul>
+</li>
+<li><a href="#task-for-agents">Task for Agents</a>
+<ul>
+<li><a href="#utility-functions">Utility functions</a></li>
+<li><a href="#optimal-agents">Optimal agents</a></li>
+<li><a href="#task-environment">Task environment</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="autonomy"><a aria-hidden="true" class="anchor-heading" href="#autonomy"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Autonomy</h1>
+<ul>
+<li>Tính tự trị
+<ul>
+<li>Decisions making</li>
+</ul>
+</li>
+<li>Adjustable: Decisions handed to a higher authority when this is benefical</li>
+</ul>
+<h1 id="agents-and"><a aria-hidden="true" class="anchor-heading" href="#agents-and"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Agents and</h1>
+<h2 id="objects"><a aria-hidden="true" class="anchor-heading" href="#objects"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Objects</h2>
+<ul>
+<li>
+<p>Agent = object + <strong>attitude</strong></p>
+</li>
+<li>
+<p>Object:</p>
+<ul>
+<li>States</li>
+<li>Message passing</li>
+<li>Methods (operations that may be performed on this state)</li>
+</ul>
+</li>
+<li>
+<p>Attitude</p>
+<ul>
+<li>Autonomous: Decide for themselves whether or not to follow other's requests</li>
+<li>Smart: Flexible (reactive, pro-active, social) behaviour</li>
+<li>Active: each agent has at least 1 thread of active control</li>
+</ul>
+</li>
+</ul>
+<h2 id="expert-systems"><a aria-hidden="true" class="anchor-heading" href="#expert-systems"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Expert systems</h2>
+<ul>
+<li>Def: "expertise" about some (abstract) domain of discourse (bàn luận)</li>
+<li>Agent is <strong>aware</strong> of the world</li>
+</ul>
+<h2 id="intelligent-agents-and-ai"><a aria-hidden="true" class="anchor-heading" href="#intelligent-agents-and-ai"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Intelligent agents and AI</h2>
+<ul>
+<li>Agent can be built to operate in <strong>a limited domain</strong></li>
+<li>A useful agent is not needed to solve all the AI's problems</li>
+</ul>
+<h1 id="environment-properties"><a aria-hidden="true" class="anchor-heading" href="#environment-properties"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Environment Properties</h1>
+<ul>
+<li>Observable: fully or partially
+<ul>
+<li>Fully: The agent can obtain complete, accurate, up-to-date information about the environment's state</li>
+</ul>
+</li>
+<li>Deterministic or non-deterministic
+<ul>
+<li>Deterministic: Any action has a single <strong>guaranteed effect</strong> (no uncertainty)</li>
+</ul>
+</li>
+<li>Static or dynamic
+<ul>
+<li>Static: Remain <strong>unchanged</strong> except by the agent's action</li>
+</ul>
+</li>
+<li>Discrete or continuous
+<ul>
+<li>Discrete: <strong>a fixed, finite number of actions</strong> and percepts in it</li>
+</ul>
+</li>
+<li>Episodic or non-episodic
+<ul>
+<li>Phân đoạn</li>
+<li>Episodic environment
+<ul>
+<li>The performance of agent is <strong>dependent on a number of discrete eptisodes</strong></li>
+<li>No linkages between different scenarios</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Real time
+<ul>
+<li><strong>Time</strong> plays a part in <strong>evaluating</strong> an agents performance</li>
+</ul>
+</li>
+</ul>
+<h1 id="intelligent-agents"><a aria-hidden="true" class="anchor-heading" href="#intelligent-agents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Intelligent agents</h1>
+<h2 id="reactive-environment-aware"><a aria-hidden="true" class="anchor-heading" href="#reactive-environment-aware"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Reactive (environment aware)</h2>
+<ul>
+<li>Phản ứng nhanh</li>
+<li>A reactive system is one that
+<ul>
+<li>Maintains an ongoing interaction with its environment</li>
+<li><strong>Responds to changes</strong> that occurs in it</li>
+</ul>
+</li>
+</ul>
+<h2 id="pro-active"><a aria-hidden="true" class="anchor-heading" href="#pro-active"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Pro-active</h2>
+<ul>
+<li>Chuyên nghiệp</li>
+<li>Generating and attempting to achieve goals</li>
+</ul>
+<h2 id="social-ability"><a aria-hidden="true" class="anchor-heading" href="#social-ability"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Social ability</h2>
+<ul>
+<li>Taking <strong>others</strong> into account</li>
+<li>Cooperation: working <strong>together</strong> to achieve a <strong>shared goal</strong></li>
+<li>Coordination: Managing the <strong>interdependencies</strong> between activities (sharing resources)</li>
+<li>Negotiation: To reach <strong>agreements</strong> on matters of <strong>common interest</strong>
+<ul>
+<li>Offer</li>
+<li>Counter offer</li>
+</ul>
+</li>
+</ul>
+<h2 id="other-properties"><a aria-hidden="true" class="anchor-heading" href="#other-properties"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Other properties</h2>
+<ul>
+<li>Mobility: moving</li>
+<li>Rationality (hợp lý): Act to achieve goals</li>
+<li>Veracity (xác thực): know the communication failures</li>
+<li>Benevolence (nhân từ): to help or not to help</li>
+<li>Learning/Adaption</li>
+</ul>
+<h1 id="intentional-system"><a aria-hidden="true" class="anchor-heading" href="#intentional-system"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Intentional System</h1>
+<ul>
+<li>Folk psychology:
+<ul>
+<li><strong>Human behaviour is predicted</strong> and explainend through the attribution of <strong>attitudes</strong>.</li>
+<li>Attitudes = intentional notions</li>
+</ul>
+</li>
+</ul>
+<h1 id="abstract-architecture"><a aria-hidden="true" class="anchor-heading" href="#abstract-architecture"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Abstract architecture</h1>
+<ul>
+<li>The world 
+<ul>
+<li>Finite set E of discrete, instantaneous (tức thời) <strong>states</strong> 
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-09-25.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Agents have a set of <strong>possible actions</strong> to transform the state of the world
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-10-59.png"></li>
+</ul>
+</li>
+<li>A <strong>run</strong> of an agent is a <strong>sequence</strong> of interleaved (xen kẽ) <em>world states and actions</em>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-12-45.png">  </li>
+<li>Runs can end with a state or an action
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-21-18.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="environments"><a aria-hidden="true" class="anchor-heading" href="#environments"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Environments</h2>
+<ul>
+<li>Properties
+<ul>
+<li>History dependent</li>
+<li>Non-determistic</li>
+</ul>
+</li>
+<li>State transformer function: environment's behaviour
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-24-49.png"></li>
+</ul>
+</li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-45-14.png">
+<ul>
+<li>E: set of states</li>
+<li>e[0]: initial state</li>
+<li>T: state transformer function</li>
+</ul>
+</li>
+</ul>
+<h2 id="agents"><a aria-hidden="true" class="anchor-heading" href="#agents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Agents</h2>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-47-19.png">
+<ul>
+<li>Agent = function which maps <strong>runs to actions</strong></li>
+<li>Ag: the set of all agents</li>
+</ul>
+</li>
+</ul>
+<h2 id="system"><a aria-hidden="true" class="anchor-heading" href="#system"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>System</h2>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-49-38.png"></li>
+<li>A system = an agent + an environment</li>
+<li>Associate with a set of <strong>possible runs</strong></li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-55-43.png"></li>
+</ul>
+<h1 id="intelligent-agent-properties"><a aria-hidden="true" class="anchor-heading" href="#intelligent-agent-properties"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Intelligent agent properties</h1>
+<ul>
+<li>Deliberative (chủ ý): Agent will reach a <strong>different decision</strong> when it reach the <strong>same state</strong> by <strong>different routes</strong> </li>
+<li>Purely reactive
+<ul>
+<li>Without history references</li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-18-00-52.png"> (state to actions)</li>
+<li>Reactive agent
+<ul>
+<li>Always do the <strong>same thing</strong> in the <strong>same state</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="agents-with-states"><a aria-hidden="true" class="anchor-heading" href="#agents-with-states"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Agents with States</h2>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-22-43-54.png"></li>
+<li>Agent's internal <strong>data structure</strong>
+<ul>
+<li>Record information about the environment state &#x26; history</li>
+</ul>
+</li>
+<li><strong>See</strong>: observe the environment
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-22-44-54.png"></li>
+<li>Output is a percept (nhận thức)</li>
+</ul>
+</li>
+<li><strong>Action</strong>: decision making
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-22-48-24.png"></li>
+<li>Internal states -> actions</li>
+</ul>
+</li>
+<li><strong>Next</strong>: 
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-22-51-50.png"></li>
+<li>Internal States + percept => new internal states</li>
+<li><strong>Updates</strong> the agent's view when it gets a <strong>new percept</strong></li>
+</ul>
+</li>
+</ul>
+<h1 id="task-for-agents"><a aria-hidden="true" class="anchor-heading" href="#task-for-agents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Task for Agents</h1>
+<h2 id="utility-functions"><a aria-hidden="true" class="anchor-heading" href="#utility-functions"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Utility functions</h2>
+<ul>
+<li><strong>Rewarding</strong> agent with the state it brings out</li>
+<li>A task specification
+<ul>
+<li>A real number (reward) with every environment state</li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-22-56-27.png"></li>
+</ul>
+</li>
+<li>Local utility functions
+<ul>
+<li>Assigning utilities to <strong>individual states</strong></li>
+<li>Difficult to specify a <strong>long term view</strong></li>
+<li><strong>Reinforcement</strong> learning: A <strong>discount</strong> for states later on</li>
+</ul>
+</li>
+<li>Sequential decision making
+<ul>
+<li>Utility gained depends on the route taken</li>
+</ul>
+</li>
+<li>Utilities over Runs
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-01-28.png"></li>
+<li>Assign utility for runs</li>
+</ul>
+</li>
+<li>Expected utility
+<ul>
+<li>Probality that run <em>r</em> occurs when agent <em>Ag</em> is placed in the enviroment <em>Env</em>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-04-15.png"></li>
+</ul>
+</li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-04-50.png">
+<ul>
+<li>Utility of each run</li>
+<li>Possibility of each run</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="optimal-agents"><a aria-hidden="true" class="anchor-heading" href="#optimal-agents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Optimal agents</h2>
+<ul>
+<li>Maximizes expected utility
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-08-11.png"></li>
+</ul>
+</li>
+<li>Do the best <strong>on average</strong></li>
+<li>Bounded optimal agents
+<ul>
+<li>Some agents <strong>can not be implemented</strong></li>
+<li>Include only those agents tthat can be implemented on <strong>machine m</strong>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-11-13.png"></li>
+</ul>
+</li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-10-54.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="task-environment"><a aria-hidden="true" class="anchor-heading" href="#task-environment"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Task environment</h2>
+<ul>
+<li>Predicate task specification: Assign 0/1 (true/false | succeed/failed) to a run
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-13-26.png"></li>
+</ul>
+</li>
+<li>Task environment:
+<ul>
+<li>A pair <img src="/multi-agent-system/./assets/images/2021-12-19-23-14-41.png">
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-14-17.png"></li>
+<li>Environment</li>
+<li>Task specification</li>
+</ul>
+</li>
+<li>Specifies
+<ul>
+<li>The properties of <a href="#system">the system</a> the agent will inhabit (occupy)</li>
+<li>The <strong>criteria</strong> by which an agent will be <strong>judged</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A set of runs of agent <em>Ag</em> in environment <em>Env</em> that satisfy <em><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\psi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span></span></span></span></span></em>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-23-52.png"> </li>
+<li>Agent <em>Ag</em> succeeds in task environment <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x3C;</mo><mi>E</mi><mi>n</mi><mi>v</mi><mo separator="true">,</mo><mi>ψ</mi><mo>></mo></mrow><annotation encoding="application/x-tex">&#x3C;Env, \psi></annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x3C;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">></span></span></span></span></span>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-27-12.png"></li>
+<li>An agent succeeds if <strong>every run satisfies the specification of the agent</strong>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-29-32.png"></li>
+</ul>
+</li>
+<li>More optimistic: succeed = at least a successful run
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-29-18.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The probability of success
+<ul>
+<li>Non-deterministic: the state transform function returns <strong>a set of possible states</strong></li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-34-14.png">
+<ul>
+<li>The sum of probabilities of every run that satisfy <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\psi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span></span></span></span></span> when agent <em>Ag</em> is placed in environment <em>Env</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Types
+<ul>
+<li>Achievement: if the agent can <strong>force the environment</strong> into one of the goal states</li>
+<li>Maintenance: if the agent <strong>never forced into</strong> one of the fail states</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="backlinks"><a aria-hidden="true" class="anchor-heading" href="#backlinks"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Backlinks</h2>
+<ul>
+<li><a href="/multi-agent-system/notes/BnuhRJcMOGIp7ASYnzgfK">Multi-Agent System</a></li>
+</ul></div></div><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-0 ant-col-md-6"><div><div class=""><div class="ant-anchor-wrapper dendron-toc" style="max-height:calc(100vh - 64px);z-index:1"><div class="ant-anchor"><div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#autonomy" title="Autonomy">Autonomy</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#agents-and" title="Agents and">Agents and</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#objects" title="Objects">Objects</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#expert-systems" title="Expert systems">Expert systems</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#intelligent-agents-and-ai" title="Intelligent agents and AI">Intelligent agents and AI</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#environment-properties" title="Environment Properties">Environment Properties</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#intelligent-agents" title="Intelligent agents">Intelligent agents</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#reactive-environment-aware" title="Reactive (environment aware)">Reactive (environment aware)</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#pro-active" title="Pro Active">Pro Active</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#social-ability" title="Social ability">Social ability</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#other-properties" title="Other properties">Other properties</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#intentional-system" title="Intentional System">Intentional System</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#abstract-architecture" title="Abstract architecture">Abstract architecture</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#environments" title="Environments">Environments</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#agents" title="Agents">Agents</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#system" title="System">System</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#intelligent-agent-properties" title="Intelligent agent properties">Intelligent agent properties</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#agents-with-states" title="Agents with States">Agents with States</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#task-for-agents" title="Task for Agents">Task for Agents</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#utility-functions" title="Utility functions">Utility functions</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#optimal-agents" title="Optimal agents">Optimal agents</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#task-environment" title="Task environment">Task environment</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#backlinks" title="Backlinks">Backlinks</a></div></div></div></div></div></div></div></div></div></main><div class="ant-divider ant-divider-horizontal" role="separator"></div><footer class="ant-layout-footer" style="padding:0 24px 24px"></footer></section></section></section></section></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"note":{"id":"FlDl9gx2mBtFM41D123aX","title":"C2-IntelligentAgents","vault":{"fsPath":"vault"},"type":"note","desc":"","links":[{"from":{"fname":"root","vaultName":"vault"},"type":"backlink","position":{"start":{"line":19,"column":3,"offset":368},"end":{"line":19,"column":56,"offset":421},"indent":[]},"value":"C2-IntelligentAgents"},{"from":{"fname":"root","vaultName":"vault"},"type":"backlink","position":{"start":{"line":47,"column":3,"offset":1180},"end":{"line":47,"column":52,"offset":1229},"indent":[]},"value":"C2-IntelligentAgents"}],"anchors":{"autonomy":{"type":"header","text":"Autonomy","value":"autonomy","line":31,"column":0,"depth":1},"agents-and":{"type":"header","text":"Agents and","value":"agents-and","line":36,"column":0,"depth":1},"objects":{"type":"header","text":"Objects","value":"objects","line":38,"column":0,"depth":2},"expert-systems":{"type":"header","text":"Expert systems","value":"expert-systems","line":51,"column":0,"depth":2},"intelligent-agents-and-ai":{"type":"header","text":"Intelligent agents and AI","value":"intelligent-agents-and-ai","line":55,"column":0,"depth":2},"environment-properties":{"type":"header","text":"Environment Properties","value":"environment-properties","line":59,"column":0,"depth":1},"intelligent-agents":{"type":"header","text":"Intelligent agents","value":"intelligent-agents","line":76,"column":0,"depth":1},"reactive-environment-aware":{"type":"header","text":"Reactive (environment aware)","value":"reactive-environment-aware","line":78,"column":0,"depth":2},"pro-active":{"type":"header","text":"Pro-active","value":"pro-active","line":84,"column":0,"depth":2},"social-ability":{"type":"header","text":"Social ability","value":"social-ability","line":88,"column":0,"depth":2},"other-properties":{"type":"header","text":"Other properties","value":"other-properties","line":96,"column":0,"depth":2},"intentional-system":{"type":"header","text":"Intentional System","value":"intentional-system","line":103,"column":0,"depth":1},"abstract-architecture":{"type":"header","text":"Abstract architecture","value":"abstract-architecture","line":108,"column":0,"depth":1},"environments":{"type":"header","text":"Environments","value":"environments","line":119,"column":0,"depth":2},"agents":{"type":"header","text":"Agents","value":"agents","line":130,"column":0,"depth":2},"system":{"type":"header","text":"System","value":"system","line":135,"column":0,"depth":2},"intelligent-agent-properties":{"type":"header","text":"Intelligent agent properties","value":"intelligent-agent-properties","line":141,"column":0,"depth":1},"agents-with-states":{"type":"header","text":"Agents with States","value":"agents-with-states","line":149,"column":0,"depth":2},"task-for-agents":{"type":"header","text":"Task for Agents","value":"task-for-agents","line":164,"column":0,"depth":1},"utility-functions":{"type":"header","text":"Utility functions","value":"utility-functions","line":166,"column":0,"depth":2},"optimal-agents":{"type":"header","text":"Optimal agents","value":"optimal-agents","line":187,"column":0,"depth":2},"task-environment":{"type":"header","text":"Task environment","value":"task-environment","line":197,"column":0,"depth":2}},"fname":"C2-IntelligentAgents","updated":1639932292448,"created":1639841130136,"parent":"BnuhRJcMOGIp7ASYnzgfK","children":[],"data":{},"contentHash":"43506aa2c72d8918c113985ecf9c8174","custom":{}},"body":"\u003ch1 id=\"c2-intelligentagents\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#c2-intelligentagents\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eC2-IntelligentAgents\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"#autonomy\"\u003eAutonomy\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#agents-and\"\u003eAgents and\u003c/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"#objects\"\u003eObjects\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#expert-systems\"\u003eExpert systems\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#intelligent-agents-and-ai\"\u003eIntelligent agents and AI\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#environment-properties\"\u003eEnvironment Properties\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#intelligent-agents\"\u003eIntelligent agents\u003c/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"#reactive-environment-aware\"\u003eReactive (environment aware)\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#pro-active\"\u003ePro-active\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#social-ability\"\u003eSocial ability\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#other-properties\"\u003eOther properties\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#intentional-system\"\u003eIntentional System\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#abstract-architecture\"\u003eAbstract architecture\u003c/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"#environments\"\u003eEnvironments\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#agents\"\u003eAgents\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#system\"\u003eSystem\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#intelligent-agent-properties\"\u003eIntelligent agent properties\u003c/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"#agents-with-states\"\u003eAgents with States\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#task-for-agents\"\u003eTask for Agents\u003c/a\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"#utility-functions\"\u003eUtility functions\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#optimal-agents\"\u003eOptimal agents\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#task-environment\"\u003eTask environment\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1 id=\"autonomy\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#autonomy\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eAutonomy\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003eTính tự trị\n\u003cul\u003e\n\u003cli\u003eDecisions making\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eAdjustable: Decisions handed to a higher authority when this is benefical\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1 id=\"agents-and\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#agents-and\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eAgents and\u003c/h1\u003e\n\u003ch2 id=\"objects\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#objects\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eObjects\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eAgent = object + \u003cstrong\u003eattitude\u003c/strong\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eObject:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eStates\u003c/li\u003e\n\u003cli\u003eMessage passing\u003c/li\u003e\n\u003cli\u003eMethods (operations that may be performed on this state)\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eAttitude\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAutonomous: Decide for themselves whether or not to follow other's requests\u003c/li\u003e\n\u003cli\u003eSmart: Flexible (reactive, pro-active, social) behaviour\u003c/li\u003e\n\u003cli\u003eActive: each agent has at least 1 thread of active control\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"expert-systems\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#expert-systems\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eExpert systems\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eDef: \"expertise\" about some (abstract) domain of discourse (bàn luận)\u003c/li\u003e\n\u003cli\u003eAgent is \u003cstrong\u003eaware\u003c/strong\u003e of the world\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"intelligent-agents-and-ai\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#intelligent-agents-and-ai\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eIntelligent agents and AI\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eAgent can be built to operate in \u003cstrong\u003ea limited domain\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eA useful agent is not needed to solve all the AI's problems\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1 id=\"environment-properties\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#environment-properties\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eEnvironment Properties\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003eObservable: fully or partially\n\u003cul\u003e\n\u003cli\u003eFully: The agent can obtain complete, accurate, up-to-date information about the environment's state\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eDeterministic or non-deterministic\n\u003cul\u003e\n\u003cli\u003eDeterministic: Any action has a single \u003cstrong\u003eguaranteed effect\u003c/strong\u003e (no uncertainty)\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eStatic or dynamic\n\u003cul\u003e\n\u003cli\u003eStatic: Remain \u003cstrong\u003eunchanged\u003c/strong\u003e except by the agent's action\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eDiscrete or continuous\n\u003cul\u003e\n\u003cli\u003eDiscrete: \u003cstrong\u003ea fixed, finite number of actions\u003c/strong\u003e and percepts in it\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eEpisodic or non-episodic\n\u003cul\u003e\n\u003cli\u003ePhân đoạn\u003c/li\u003e\n\u003cli\u003eEpisodic environment\n\u003cul\u003e\n\u003cli\u003eThe performance of agent is \u003cstrong\u003edependent on a number of discrete eptisodes\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eNo linkages between different scenarios\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eReal time\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eTime\u003c/strong\u003e plays a part in \u003cstrong\u003eevaluating\u003c/strong\u003e an agents performance\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1 id=\"intelligent-agents\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#intelligent-agents\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eIntelligent agents\u003c/h1\u003e\n\u003ch2 id=\"reactive-environment-aware\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#reactive-environment-aware\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eReactive (environment aware)\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003ePhản ứng nhanh\u003c/li\u003e\n\u003cli\u003eA reactive system is one that\n\u003cul\u003e\n\u003cli\u003eMaintains an ongoing interaction with its environment\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eResponds to changes\u003c/strong\u003e that occurs in it\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"pro-active\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#pro-active\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003ePro-active\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eChuyên nghiệp\u003c/li\u003e\n\u003cli\u003eGenerating and attempting to achieve goals\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"social-ability\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#social-ability\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eSocial ability\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eTaking \u003cstrong\u003eothers\u003c/strong\u003e into account\u003c/li\u003e\n\u003cli\u003eCooperation: working \u003cstrong\u003etogether\u003c/strong\u003e to achieve a \u003cstrong\u003eshared goal\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eCoordination: Managing the \u003cstrong\u003einterdependencies\u003c/strong\u003e between activities (sharing resources)\u003c/li\u003e\n\u003cli\u003eNegotiation: To reach \u003cstrong\u003eagreements\u003c/strong\u003e on matters of \u003cstrong\u003ecommon interest\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eOffer\u003c/li\u003e\n\u003cli\u003eCounter offer\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"other-properties\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#other-properties\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eOther properties\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eMobility: moving\u003c/li\u003e\n\u003cli\u003eRationality (hợp lý): Act to achieve goals\u003c/li\u003e\n\u003cli\u003eVeracity (xác thực): know the communication failures\u003c/li\u003e\n\u003cli\u003eBenevolence (nhân từ): to help or not to help\u003c/li\u003e\n\u003cli\u003eLearning/Adaption\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1 id=\"intentional-system\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#intentional-system\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eIntentional System\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003eFolk psychology:\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eHuman behaviour is predicted\u003c/strong\u003e and explainend through the attribution of \u003cstrong\u003eattitudes\u003c/strong\u003e.\u003c/li\u003e\n\u003cli\u003eAttitudes = intentional notions\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1 id=\"abstract-architecture\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#abstract-architecture\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eAbstract architecture\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003eThe world \n\u003cul\u003e\n\u003cli\u003eFinite set E of discrete, instantaneous (tức thời) \u003cstrong\u003estates\u003c/strong\u003e \n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-17-09-25.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eAgents have a set of \u003cstrong\u003epossible actions\u003c/strong\u003e to transform the state of the world\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-17-10-59.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eA \u003cstrong\u003erun\u003c/strong\u003e of an agent is a \u003cstrong\u003esequence\u003c/strong\u003e of interleaved (xen kẽ) \u003cem\u003eworld states and actions\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-17-12-45.png\"\u003e  \u003c/li\u003e\n\u003cli\u003eRuns can end with a state or an action\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-17-21-18.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"environments\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#environments\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eEnvironments\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eProperties\n\u003cul\u003e\n\u003cli\u003eHistory dependent\u003c/li\u003e\n\u003cli\u003eNon-determistic\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eState transformer function: environment's behaviour\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-17-24-49.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-17-45-14.png\"\u003e\n\u003cul\u003e\n\u003cli\u003eE: set of states\u003c/li\u003e\n\u003cli\u003ee[0]: initial state\u003c/li\u003e\n\u003cli\u003eT: state transformer function\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"agents\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#agents\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eAgents\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-17-47-19.png\"\u003e\n\u003cul\u003e\n\u003cli\u003eAgent = function which maps \u003cstrong\u003eruns to actions\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eAg: the set of all agents\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"system\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#system\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eSystem\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-17-49-38.png\"\u003e\u003c/li\u003e\n\u003cli\u003eA system = an agent + an environment\u003c/li\u003e\n\u003cli\u003eAssociate with a set of \u003cstrong\u003epossible runs\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-17-55-43.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1 id=\"intelligent-agent-properties\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#intelligent-agent-properties\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eIntelligent agent properties\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003eDeliberative (chủ ý): Agent will reach a \u003cstrong\u003edifferent decision\u003c/strong\u003e when it reach the \u003cstrong\u003esame state\u003c/strong\u003e by \u003cstrong\u003edifferent routes\u003c/strong\u003e \u003c/li\u003e\n\u003cli\u003ePurely reactive\n\u003cul\u003e\n\u003cli\u003eWithout history references\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-18-00-52.png\"\u003e (state to actions)\u003c/li\u003e\n\u003cli\u003eReactive agent\n\u003cul\u003e\n\u003cli\u003eAlways do the \u003cstrong\u003esame thing\u003c/strong\u003e in the \u003cstrong\u003esame state\u003c/strong\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"agents-with-states\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#agents-with-states\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eAgents with States\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-22-43-54.png\"\u003e\u003c/li\u003e\n\u003cli\u003eAgent's internal \u003cstrong\u003edata structure\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003eRecord information about the environment state \u0026#x26; history\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eSee\u003c/strong\u003e: observe the environment\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-22-44-54.png\"\u003e\u003c/li\u003e\n\u003cli\u003eOutput is a percept (nhận thức)\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eAction\u003c/strong\u003e: decision making\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-22-48-24.png\"\u003e\u003c/li\u003e\n\u003cli\u003eInternal states -\u003e actions\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eNext\u003c/strong\u003e: \n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-22-51-50.png\"\u003e\u003c/li\u003e\n\u003cli\u003eInternal States + percept =\u003e new internal states\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eUpdates\u003c/strong\u003e the agent's view when it gets a \u003cstrong\u003enew percept\u003c/strong\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1 id=\"task-for-agents\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#task-for-agents\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eTask for Agents\u003c/h1\u003e\n\u003ch2 id=\"utility-functions\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#utility-functions\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eUtility functions\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eRewarding\u003c/strong\u003e agent with the state it brings out\u003c/li\u003e\n\u003cli\u003eA task specification\n\u003cul\u003e\n\u003cli\u003eA real number (reward) with every environment state\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-22-56-27.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eLocal utility functions\n\u003cul\u003e\n\u003cli\u003eAssigning utilities to \u003cstrong\u003eindividual states\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eDifficult to specify a \u003cstrong\u003elong term view\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eReinforcement\u003c/strong\u003e learning: A \u003cstrong\u003ediscount\u003c/strong\u003e for states later on\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eSequential decision making\n\u003cul\u003e\n\u003cli\u003eUtility gained depends on the route taken\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eUtilities over Runs\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-01-28.png\"\u003e\u003c/li\u003e\n\u003cli\u003eAssign utility for runs\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eExpected utility\n\u003cul\u003e\n\u003cli\u003eProbality that run \u003cem\u003er\u003c/em\u003e occurs when agent \u003cem\u003eAg\u003c/em\u003e is placed in the enviroment \u003cem\u003eEnv\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-04-15.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-04-50.png\"\u003e\n\u003cul\u003e\n\u003cli\u003eUtility of each run\u003c/li\u003e\n\u003cli\u003ePossibility of each run\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"optimal-agents\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#optimal-agents\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eOptimal agents\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eMaximizes expected utility\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-08-11.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eDo the best \u003cstrong\u003eon average\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eBounded optimal agents\n\u003cul\u003e\n\u003cli\u003eSome agents \u003cstrong\u003ecan not be implemented\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eInclude only those agents tthat can be implemented on \u003cstrong\u003emachine m\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-11-13.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-10-54.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"task-environment\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#task-environment\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eTask environment\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003ePredicate task specification: Assign 0/1 (true/false | succeed/failed) to a run\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-13-26.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eTask environment:\n\u003cul\u003e\n\u003cli\u003eA pair \u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-14-41.png\"\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-14-17.png\"\u003e\u003c/li\u003e\n\u003cli\u003eEnvironment\u003c/li\u003e\n\u003cli\u003eTask specification\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eSpecifies\n\u003cul\u003e\n\u003cli\u003eThe properties of \u003ca href=\"#system\"\u003ethe system\u003c/a\u003e the agent will inhabit (occupy)\u003c/li\u003e\n\u003cli\u003eThe \u003cstrong\u003ecriteria\u003c/strong\u003e by which an agent will be \u003cstrong\u003ejudged\u003c/strong\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eA set of runs of agent \u003cem\u003eAg\u003c/em\u003e in environment \u003cem\u003eEnv\u003c/em\u003e that satisfy \u003cem\u003e\u003cspan class=\"math math-inline\"\u003e\u003cspan class=\"katex\"\u003e\u003cspan class=\"katex-mathml\"\u003e\u003cmath xmlns=\"http://www.w3.org/1998/Math/MathML\"\u003e\u003csemantics\u003e\u003cmrow\u003e\u003cmi\u003eψ\u003c/mi\u003e\u003c/mrow\u003e\u003cannotation encoding=\"application/x-tex\"\u003e\\psi\u003c/annotation\u003e\u003c/semantics\u003e\u003c/math\u003e\u003c/span\u003e\u003cspan class=\"katex-html\" aria-hidden=\"true\"\u003e\u003cspan class=\"base\"\u003e\u003cspan class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"\u003e\u003c/span\u003e\u003cspan class=\"mord mathnormal\" style=\"margin-right:0.03588em;\"\u003eψ\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/em\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-23-52.png\"\u003e \u003c/li\u003e\n\u003cli\u003eAgent \u003cem\u003eAg\u003c/em\u003e succeeds in task environment \u003cspan class=\"math math-inline\"\u003e\u003cspan class=\"katex\"\u003e\u003cspan class=\"katex-mathml\"\u003e\u003cmath xmlns=\"http://www.w3.org/1998/Math/MathML\"\u003e\u003csemantics\u003e\u003cmrow\u003e\u003cmo\u003e\u0026#x3C;\u003c/mo\u003e\u003cmi\u003eE\u003c/mi\u003e\u003cmi\u003en\u003c/mi\u003e\u003cmi\u003ev\u003c/mi\u003e\u003cmo separator=\"true\"\u003e,\u003c/mo\u003e\u003cmi\u003eψ\u003c/mi\u003e\u003cmo\u003e\u003e\u003c/mo\u003e\u003c/mrow\u003e\u003cannotation encoding=\"application/x-tex\"\u003e\u0026#x3C;Env, \\psi\u003e\u003c/annotation\u003e\u003c/semantics\u003e\u003c/math\u003e\u003c/span\u003e\u003cspan class=\"katex-html\" aria-hidden=\"true\"\u003e\u003cspan class=\"base\"\u003e\u003cspan class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"\u003e\u003c/span\u003e\u003cspan class=\"mrel\"\u003e\u0026#x3C;\u003c/span\u003e\u003cspan class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"base\"\u003e\u003cspan class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"\u003e\u003c/span\u003e\u003cspan class=\"mord mathnormal\" style=\"margin-right:0.05764em;\"\u003eE\u003c/span\u003e\u003cspan class=\"mord mathnormal\"\u003en\u003c/span\u003e\u003cspan class=\"mord mathnormal\" style=\"margin-right:0.03588em;\"\u003ev\u003c/span\u003e\u003cspan class=\"mpunct\"\u003e,\u003c/span\u003e\u003cspan class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"\u003e\u003c/span\u003e\u003cspan class=\"mord mathnormal\" style=\"margin-right:0.03588em;\"\u003eψ\u003c/span\u003e\u003cspan class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"\u003e\u003c/span\u003e\u003cspan class=\"mrel\"\u003e\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-27-12.png\"\u003e\u003c/li\u003e\n\u003cli\u003eAn agent succeeds if \u003cstrong\u003eevery run satisfies the specification of the agent\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-29-32.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eMore optimistic: succeed = at least a successful run\n\u003cul\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-29-18.png\"\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eThe probability of success\n\u003cul\u003e\n\u003cli\u003eNon-deterministic: the state transform function returns \u003cstrong\u003ea set of possible states\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cimg src=\"/multi-agent-system/./assets/images/2021-12-19-23-34-14.png\"\u003e\n\u003cul\u003e\n\u003cli\u003eThe sum of probabilities of every run that satisfy \u003cspan class=\"math math-inline\"\u003e\u003cspan class=\"katex\"\u003e\u003cspan class=\"katex-mathml\"\u003e\u003cmath xmlns=\"http://www.w3.org/1998/Math/MathML\"\u003e\u003csemantics\u003e\u003cmrow\u003e\u003cmi\u003eψ\u003c/mi\u003e\u003c/mrow\u003e\u003cannotation encoding=\"application/x-tex\"\u003e\\psi\u003c/annotation\u003e\u003c/semantics\u003e\u003c/math\u003e\u003c/span\u003e\u003cspan class=\"katex-html\" aria-hidden=\"true\"\u003e\u003cspan class=\"base\"\u003e\u003cspan class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"\u003e\u003c/span\u003e\u003cspan class=\"mord mathnormal\" style=\"margin-right:0.03588em;\"\u003eψ\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e when agent \u003cem\u003eAg\u003c/em\u003e is placed in environment \u003cem\u003eEnv\u003c/em\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eTypes\n\u003cul\u003e\n\u003cli\u003eAchievement: if the agent can \u003cstrong\u003eforce the environment\u003c/strong\u003e into one of the goal states\u003c/li\u003e\n\u003cli\u003eMaintenance: if the agent \u003cstrong\u003enever forced into\u003c/strong\u003e one of the fail states\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch2 id=\"backlinks\"\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading\" href=\"#backlinks\"\u003e\u003csvg aria-hidden=\"true\" viewBox=\"0 0 16 16\"\u003e\u003cuse xlink:href=\"#svg-link\"\u003e\u003c/use\u003e\u003c/svg\u003e\u003c/a\u003eBacklinks\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"/multi-agent-system/notes/BnuhRJcMOGIp7ASYnzgfK\"\u003eMulti-Agent System\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e","noteIndex":{"id":"BnuhRJcMOGIp7ASYnzgfK","title":"Multi-Agent System","vault":{"fsPath":"vault"},"type":"note","desc":"","links":[{"type":"ref","from":{"fname":"root","id":"BnuhRJcMOGIp7ASYnzgfK","vaultName":"vault"},"value":"C1-Introduction","position":{"start":{"line":4,"column":22,"offset":64},"end":{"line":4,"column":66,"offset":108},"indent":[]},"xvault":false,"to":{"fname":"C1-Introduction","anchorHeader":"multi-agent-system,1:#*"}},{"type":"ref","from":{"fname":"root","id":"BnuhRJcMOGIp7ASYnzgfK","vaultName":"vault"},"value":"C2-IntelligentAgents","position":{"start":{"line":19,"column":3,"offset":368},"end":{"line":19,"column":56,"offset":421},"indent":[]},"xvault":false,"to":{"fname":"C2-IntelligentAgents","anchorHeader":"environment-properties,1:#*"}},{"type":"ref","from":{"fname":"root","id":"BnuhRJcMOGIp7ASYnzgfK","vaultName":"vault"},"value":"C2-IntelligentAgents","position":{"start":{"line":47,"column":3,"offset":1180},"end":{"line":47,"column":52,"offset":1229},"indent":[]},"xvault":false,"to":{"fname":"C2-IntelligentAgents","anchorHeader":"agents-with-states,1:#*"}}],"anchors":{"công-nghệ-tác-tử":{"type":"header","text":"Công nghệ tác tử","value":"công-nghệ-tác-tử","line":7,"column":0,"depth":1},"chapter-1-key-notes":{"type":"header","text":"Chapter 1 key notes","value":"chapter-1-key-notes","line":9,"column":0,"depth":2},"chapter-2-key-notes":{"type":"header","text":"Chapter 2 key notes","value":"chapter-2-key-notes","line":12,"column":0,"depth":2}},"fname":"root","updated":1639936813299,"created":1639839870130,"parent":null,"children":["nyjsbqpAPM3WrEtJJFLmn","FlDl9gx2mBtFM41D123aX"],"data":{},"contentHash":"b0304be7f6d14cbb53272316c7699e00","custom":{"nav_order":0,"permalink":"/"},"body":"# Công nghệ tác tử\n\n## Chapter 1 key notes\n- Multi-agent system ![[C1-Introduction#multi-agent-system,1:#*]]\n\n## Chapter 2 key notes\n- Agent ~ Autonomous ~ Making decisions\n  - What to perform?\n  - When to perform?\n\n- Agents\n  - Have attitude\n    - Autonomous\n    - Smart - flexible behaviours\n    - Active\n  - Environment awareness\n  - Operate in a limited domain\n\n- ![[C2-IntelligentAgents#environment-properties,1:#*]]\n\n- Intelligent agents\n  - Reactive\n    - Environment aware\n    - Responds to changes\n  - Pro-active (achieving goals)\n  - Social ability (working with others)\n\n- The behaviour of an agent can be predicted using its intention\n\n- Abstract architecture\n  - World has a finite set of states\n  - Agents have a set of possible actions\n  - A run: a sequence of actions and states\n\n- Notion\n  - Environment: states, initial states, transformer function\n  - Agent: runs -\u003e action\n  - A system: \n    - a pair of an agent \u0026 an environment\n    - has a set of possible runs\n    - ![](./assets/images/2021-12-19-17-55-51.png) \n\n- Deliberative vs Purely reactive\n  - Deliberative: Making decisions Reactive agent\n    - Always do the **same thing** in the **same state**\n\n- ![[C2-IntelligentAgents#agents-with-states,1:#*]]\n\n- Utility function:\n  - Rewarding agents\n  - Locality: utility for each state, no long term view\n  - Reinforcement: a discount for states later on\n  - Sequential decision making: Utilities depend on the route\n  - Assign utilities for runs: long term view\n  - Expected utility: run utility * run possibility\n\n- Optimal agents\n  - Maximizes the expected utility (on average)\n  - **Bounded**: only those agents that **can be implemented on machine m**\n\n- Task environment\n  - Predicate task specification: succeeds/fails\n  - A pair: environment, task specification\n    - the system's properties\n    - judging criterias\n  - Judging\n    - Pessimistic: all run must be succeeded\n    - Optimistic: a run is succeeded\n  - The probability of success\n    - Sum of all success runs\n  - Types\n    - Achivement: to the goal\n    - Maintenance: not to fail"},"collectionChildren":null,"customHeadContent":null,"config":{"version":4,"useFMTitle":true,"useNoteTitleForLink":true,"mermaid":true,"useKatex":true,"dev":{"enablePreviewV2":true},"site":{"copyAssets":true,"siteHierarchies":["root"],"siteRootDir":"docs","usePrettyRefs":true,"title":"Dendron","description":"Personal knowledge space","siteLastModified":true,"gh_edit_branch":"main","duplicateNoteBehavior":{"action":"useVault","payload":["vault"]},"assetsPrefix":"/multi-agent-system","siteUrl":"https://thanhpp.github.io","usePrettyLinks":true,"siteNotesDir":"notes","siteFaviconPath":"favicon.ico","gh_edit_link":true,"gh_edit_link_text":"Edit this page on GitHub","gh_root":"docs/","gh_edit_view_mode":"edit","writeStubs":true,"siteIndex":"root"},"commands":{"lookup":{"note":{"selectionMode":"extract","confirmVaultOnCreate":false,"leaveTrace":false,"bubbleUpCreateNew":true,"fuzzThreshold":0.2}},"randomNote":{},"insertNote":{"initialValue":"templates"},"insertNoteLink":{"aliasMode":"none","enableMultiSelect":false},"insertNoteIndex":{"enableMarker":false}},"workspace":{"vaults":[{"fsPath":"vault"}],"journal":{"dailyDomain":"daily","name":"journal","dateFormat":"y.MM.dd","addBehavior":"childOfDomain"},"scratch":{"name":"scratch","dateFormat":"y.MM.dd.HHmmss","addBehavior":"asOwnDomain"},"task":{"name":"","dateFormat":"","addBehavior":"childOfCurrent","statusSymbols":{"":" ","wip":"w","done":"x","assigned":"a","moved":"m","blocked":"b","delegated":"l","dropped":"d","pending":"y"},"prioritySymbols":{"H":"high","M":"medium","L":"low"},"todoIntegration":false,"createTaskSelectionType":"selection2link"},"graph":{"zoomSpeed":1},"enableAutoCreateOnDefinition":false,"enableXVaultWikiLink":false,"enableRemoteVaultInit":true,"enableUserTags":true,"enableHashTags":true,"workspaceVaultSyncMode":"noCommit","enableAutoFoldFrontmatter":false,"enableEditorDecorations":true,"maxPreviewsCached":10,"maxNoteLength":204800},"preview":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enableMermaid":true,"enablePrettyRefs":true,"enableKatex":true}}},"__N_SSG":true},"page":"/notes/[id]","query":{"id":"FlDl9gx2mBtFM41D123aX"},"buildId":"8UI4sNPe3MpBm8bWUHKqZ","assetPrefix":"/multi-agent-system","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

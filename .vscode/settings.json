@@ -1,6 +1,6 @@
 {
     "dendron.rootDir": ".",
-    "pasteImage.path": "${currentFileDir}/assets/images",
+    "pasteImage.path": "${currentFileDir}./assets/images",
     "pasteImage.prefix": "/",
     "editor.snippetSuggestions": "inline",
     "editor.suggest.snippetsPreventQuickSuggestions": false,

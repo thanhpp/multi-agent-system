@@ -1,0 +1,403 @@
+<h1 id="c2-intelligentagents"><a aria-hidden="true" class="anchor-heading" href="#c2-intelligentagents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>C2-IntelligentAgents</h1>
+<ul>
+<li><a href="#autonomy">Autonomy</a></li>
+<li><a href="#agents-and">Agents and</a>
+<ul>
+<li><a href="#objects">Objects</a></li>
+<li><a href="#expert-systems">Expert systems</a></li>
+<li><a href="#intelligent-agents-and-ai">Intelligent agents and AI</a></li>
+</ul>
+</li>
+<li><a href="#environment-properties">Environment Properties</a></li>
+<li><a href="#intelligent-agents">Intelligent agents</a>
+<ul>
+<li><a href="#reactive-environment-aware">Reactive (environment aware)</a></li>
+<li><a href="#pro-active">Pro-active</a></li>
+<li><a href="#social-ability">Social ability</a></li>
+<li><a href="#other-properties">Other properties</a></li>
+</ul>
+</li>
+<li><a href="#intentional-system">Intentional System</a></li>
+<li><a href="#abstract-architecture">Abstract architecture</a>
+<ul>
+<li><a href="#environments">Environments</a></li>
+<li><a href="#agents">Agents</a></li>
+<li><a href="#system">System</a></li>
+</ul>
+</li>
+<li><a href="#intelligent-agent-properties">Intelligent agent properties</a>
+<ul>
+<li><a href="#agents-with-states">Agents with States</a></li>
+</ul>
+</li>
+<li><a href="#task-for-agents">Task for Agents</a>
+<ul>
+<li><a href="#utility-functions">Utility functions</a></li>
+<li><a href="#optimal-agents">Optimal agents</a></li>
+<li><a href="#task-environment">Task environment</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="autonomy"><a aria-hidden="true" class="anchor-heading" href="#autonomy"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Autonomy</h1>
+<ul>
+<li>Tính tự trị
+<ul>
+<li>Decisions making</li>
+</ul>
+</li>
+<li>Adjustable: Decisions handed to a higher authority when this is benefical</li>
+</ul>
+<h1 id="agents-and"><a aria-hidden="true" class="anchor-heading" href="#agents-and"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Agents and</h1>
+<h2 id="objects"><a aria-hidden="true" class="anchor-heading" href="#objects"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Objects</h2>
+<ul>
+<li>
+<p>Agent = object + <strong>attitude</strong></p>
+</li>
+<li>
+<p>Object:</p>
+<ul>
+<li>States</li>
+<li>Message passing</li>
+<li>Methods (operations that may be performed on this state)</li>
+</ul>
+</li>
+<li>
+<p>Attitude</p>
+<ul>
+<li>Autonomous: Decide for themselves whether or not to follow other's requests</li>
+<li>Smart: Flexible (reactive, pro-active, social) behaviour</li>
+<li>Active: each agent has at least 1 thread of active control</li>
+</ul>
+</li>
+</ul>
+<h2 id="expert-systems"><a aria-hidden="true" class="anchor-heading" href="#expert-systems"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Expert systems</h2>
+<ul>
+<li>Def: "expertise" about some (abstract) domain of discourse (bàn luận)</li>
+<li>Agent is <strong>aware</strong> of the world</li>
+</ul>
+<h2 id="intelligent-agents-and-ai"><a aria-hidden="true" class="anchor-heading" href="#intelligent-agents-and-ai"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Intelligent agents and AI</h2>
+<ul>
+<li>Agent can be built to operate in <strong>a limited domain</strong></li>
+<li>A useful agent is not needed to solve all the AI's problems</li>
+</ul>
+<h1 id="environment-properties"><a aria-hidden="true" class="anchor-heading" href="#environment-properties"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Environment Properties</h1>
+<ul>
+<li>Observable: fully or partially
+<ul>
+<li>Fully: The agent can obtain complete, accurate, up-to-date information about the environment's state</li>
+</ul>
+</li>
+<li>Deterministic or non-deterministic
+<ul>
+<li>Deterministic: Any action has a single <strong>guaranteed effect</strong> (no uncertainty)</li>
+</ul>
+</li>
+<li>Static or dynamic
+<ul>
+<li>Static: Remain <strong>unchanged</strong> except by the agent's action</li>
+</ul>
+</li>
+<li>Discrete or continuous
+<ul>
+<li>Discrete: <strong>a fixed, finite number of actions</strong> and percepts in it</li>
+</ul>
+</li>
+<li>Episodic or non-episodic
+<ul>
+<li>Phân đoạn</li>
+<li>Episodic environment
+<ul>
+<li>The performance of agent is <strong>dependent on a number of discrete eptisodes</strong></li>
+<li>No linkages between different scenarios</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Real time
+<ul>
+<li><strong>Time</strong> plays a part in <strong>evaluating</strong> an agents performance</li>
+</ul>
+</li>
+</ul>
+<h1 id="intelligent-agents"><a aria-hidden="true" class="anchor-heading" href="#intelligent-agents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Intelligent agents</h1>
+<h2 id="reactive-environment-aware"><a aria-hidden="true" class="anchor-heading" href="#reactive-environment-aware"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Reactive (environment aware)</h2>
+<ul>
+<li>Phản ứng nhanh</li>
+<li>A reactive system is one that
+<ul>
+<li>Maintains an ongoing interaction with its environment</li>
+<li><strong>Responds to changes</strong> that occurs in it</li>
+</ul>
+</li>
+</ul>
+<h2 id="pro-active"><a aria-hidden="true" class="anchor-heading" href="#pro-active"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Pro-active</h2>
+<ul>
+<li>Chuyên nghiệp</li>
+<li>Generating and attempting to achieve goals</li>
+</ul>
+<h2 id="social-ability"><a aria-hidden="true" class="anchor-heading" href="#social-ability"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Social ability</h2>
+<ul>
+<li>Taking <strong>others</strong> into account</li>
+<li>Cooperation: working <strong>together</strong> to achieve a <strong>shared goal</strong></li>
+<li>Coordination: Managing the <strong>interdependencies</strong> between activities (sharing resources)</li>
+<li>Negotiation: To reach <strong>agreements</strong> on matters of <strong>common interest</strong>
+<ul>
+<li>Offer</li>
+<li>Counter offer</li>
+</ul>
+</li>
+</ul>
+<h2 id="other-properties"><a aria-hidden="true" class="anchor-heading" href="#other-properties"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Other properties</h2>
+<ul>
+<li>Mobility: moving</li>
+<li>Rationality (hợp lý): Act to achieve goals</li>
+<li>Veracity (xác thực): know the communication failures</li>
+<li>Benevolence (nhân từ): to help or not to help</li>
+<li>Learning/Adaption</li>
+</ul>
+<h1 id="intentional-system"><a aria-hidden="true" class="anchor-heading" href="#intentional-system"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Intentional System</h1>
+<ul>
+<li>Folk psychology:
+<ul>
+<li><strong>Human behaviour is predicted</strong> and explainend through the attribution of <strong>attitudes</strong>.</li>
+<li>Attitudes = intentional notions</li>
+</ul>
+</li>
+</ul>
+<h1 id="abstract-architecture"><a aria-hidden="true" class="anchor-heading" href="#abstract-architecture"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Abstract architecture</h1>
+<ul>
+<li>The world 
+<ul>
+<li>Finite set E of discrete, instantaneous (tức thời) <strong>states</strong> 
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-09-25.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Agents have a set of <strong>possible actions</strong> to transform the state of the world
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-10-59.png"></li>
+</ul>
+</li>
+<li>A <strong>run</strong> of an agent is a <strong>sequence</strong> of interleaved (xen kẽ) <em>world states and actions</em>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-12-45.png">  </li>
+<li>Runs can end with a state or an action
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-21-18.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="environments"><a aria-hidden="true" class="anchor-heading" href="#environments"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Environments</h2>
+<ul>
+<li>Properties
+<ul>
+<li>History dependent</li>
+<li>Non-determistic</li>
+</ul>
+</li>
+<li>State transformer function: environment's behaviour
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-24-49.png"></li>
+</ul>
+</li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-45-14.png">
+<ul>
+<li>E: set of states</li>
+<li>e[0]: initial state</li>
+<li>T: state transformer function</li>
+</ul>
+</li>
+</ul>
+<h2 id="agents"><a aria-hidden="true" class="anchor-heading" href="#agents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Agents</h2>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-47-19.png">
+<ul>
+<li>Agent = function which maps <strong>runs to actions</strong></li>
+<li>Ag: the set of all agents</li>
+</ul>
+</li>
+</ul>
+<h2 id="system"><a aria-hidden="true" class="anchor-heading" href="#system"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>System</h2>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-49-38.png"></li>
+<li>A system = an agent + an environment</li>
+<li>Associate with a set of <strong>possible runs</strong></li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-17-55-43.png"></li>
+</ul>
+<h1 id="intelligent-agent-properties"><a aria-hidden="true" class="anchor-heading" href="#intelligent-agent-properties"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Intelligent agent properties</h1>
+<ul>
+<li>Deliberative (chủ ý): Agent will reach a <strong>different decision</strong> when it reach the <strong>same state</strong> by <strong>different routes</strong> </li>
+<li>Purely reactive
+<ul>
+<li>Without history references</li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-18-00-52.png"> (state to actions)</li>
+<li>Reactive agent
+<ul>
+<li>Always do the <strong>same thing</strong> in the <strong>same state</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="agents-with-states"><a aria-hidden="true" class="anchor-heading" href="#agents-with-states"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Agents with States</h2>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-22-43-54.png"></li>
+<li>Agent's internal <strong>data structure</strong>
+<ul>
+<li>Record information about the environment state &#x26; history</li>
+</ul>
+</li>
+<li><strong>See</strong>: observe the environment
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-22-44-54.png"></li>
+<li>Output is a percept (nhận thức)</li>
+</ul>
+</li>
+<li><strong>Action</strong>: decision making
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-22-48-24.png"></li>
+<li>Internal states -> actions</li>
+</ul>
+</li>
+<li><strong>Next</strong>: 
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-22-51-50.png"></li>
+<li>Internal States + percept => new internal states</li>
+<li><strong>Updates</strong> the agent's view when it gets a <strong>new percept</strong></li>
+</ul>
+</li>
+</ul>
+<h1 id="task-for-agents"><a aria-hidden="true" class="anchor-heading" href="#task-for-agents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Task for Agents</h1>
+<h2 id="utility-functions"><a aria-hidden="true" class="anchor-heading" href="#utility-functions"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Utility functions</h2>
+<ul>
+<li><strong>Rewarding</strong> agent with the state it brings out</li>
+<li>A task specification
+<ul>
+<li>A real number (reward) with every environment state</li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-22-56-27.png"></li>
+</ul>
+</li>
+<li>Local utility functions
+<ul>
+<li>Assigning utilities to <strong>individual states</strong></li>
+<li>Difficult to specify a <strong>long term view</strong></li>
+<li><strong>Reinforcement</strong> learning: A <strong>discount</strong> for states later on</li>
+</ul>
+</li>
+<li>Sequential decision making
+<ul>
+<li>Utility gained depends on the route taken</li>
+</ul>
+</li>
+<li>Utilities over Runs
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-01-28.png"></li>
+<li>Assign utility for runs</li>
+</ul>
+</li>
+<li>Expected utility
+<ul>
+<li>Probality that run <em>r</em> occurs when agent <em>Ag</em> is placed in the enviroment <em>Env</em>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-04-15.png"></li>
+</ul>
+</li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-04-50.png">
+<ul>
+<li>Utility of each run</li>
+<li>Possibility of each run</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="optimal-agents"><a aria-hidden="true" class="anchor-heading" href="#optimal-agents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Optimal agents</h2>
+<ul>
+<li>Maximizes expected utility
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-08-11.png"></li>
+</ul>
+</li>
+<li>Do the best <strong>on average</strong></li>
+<li>Bounded optimal agents
+<ul>
+<li>Some agents <strong>can not be implemented</strong></li>
+<li>Include only those agents tthat can be implemented on <strong>machine m</strong>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-11-13.png"></li>
+</ul>
+</li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-10-54.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="task-environment"><a aria-hidden="true" class="anchor-heading" href="#task-environment"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Task environment</h2>
+<ul>
+<li>Predicate task specification: Assign 0/1 (true/false | succeed/failed) to a run
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-13-26.png"></li>
+</ul>
+</li>
+<li>Task environment:
+<ul>
+<li>A pair <img src="/multi-agent-system/./assets/images/2021-12-19-23-14-41.png">
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-14-17.png"></li>
+<li>Environment</li>
+<li>Task specification</li>
+</ul>
+</li>
+<li>Specifies
+<ul>
+<li>The properties of <a href="#system">the system</a> the agent will inhabit (occupy)</li>
+<li>The <strong>criteria</strong> by which an agent will be <strong>judged</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A set of runs of agent <em>Ag</em> in environment <em>Env</em> that satisfy <em><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\psi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span></span></span></span></span></em>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-23-52.png"> </li>
+<li>Agent <em>Ag</em> succeeds in task environment <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x3C;</mo><mi>E</mi><mi>n</mi><mi>v</mi><mo separator="true">,</mo><mi>ψ</mi><mo>></mo></mrow><annotation encoding="application/x-tex">&#x3C;Env, \psi></annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x3C;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">></span></span></span></span></span>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-27-12.png"></li>
+<li>An agent succeeds if <strong>every run satisfies the specification of the agent</strong>
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-29-32.png"></li>
+</ul>
+</li>
+<li>More optimistic: succeed = at least a successful run
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-29-18.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The probability of success
+<ul>
+<li>Non-deterministic: the state transform function returns <strong>a set of possible states</strong></li>
+<li><img src="/multi-agent-system/./assets/images/2021-12-19-23-34-14.png">
+<ul>
+<li>The sum of probabilities of every run that satisfy <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\psi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span></span></span></span></span> when agent <em>Ag</em> is placed in environment <em>Env</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Types
+<ul>
+<li>Achievement: if the agent can <strong>force the environment</strong> into one of the goal states</li>
+<li>Maintenance: if the agent <strong>never forced into</strong> one of the fail states</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="backlinks"><a aria-hidden="true" class="anchor-heading" href="#backlinks"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Backlinks</h2>
+<ul>
+<li><a href="/multi-agent-system/notes/BnuhRJcMOGIp7ASYnzgfK">Multi-Agent System</a></li>
+</ul>

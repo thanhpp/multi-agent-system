@@ -1,10 +1,3 @@
----
-id: BnuhRJcMOGIp7ASYnzgfK
-title: Multi-Agent System
-desc: ''
-updated: 1639936813299
-created: 1639839870130
----
 # Công nghệ tác tử
 
 ## Chapter 1 key notes
