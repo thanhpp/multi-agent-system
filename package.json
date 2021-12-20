@@ -21,5 +21,8 @@
     "@dendronhq/dendron-cli": "^0.73.0"
   },
   "devDependencies": {},
+  "directories": {
+    "doc": "docs"
+  },
   "description": ""
 }

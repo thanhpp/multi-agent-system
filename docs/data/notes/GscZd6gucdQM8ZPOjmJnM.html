@@ -1,0 +1,179 @@
+<h1 id="c3-deductivereasoningagents"><a aria-hidden="true" class="anchor-heading" href="#c3-deductivereasoningagents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>C3-DeductiveReasoningAgents</h1>
+<blockquote>
+<p>Tác tử có khả năng suy luận</p>
+</blockquote>
+<h1 id="agent-architecture"><a aria-hidden="true" class="anchor-heading" href="#agent-architecture"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Agent architecture</h1>
+<ul>
+<li>
+<p>Architecture</p>
+<ul>
+<li>A set of software/hardware/modules</li>
+<li>Data &#x26; control flow (interactions) between modules</li>
+</ul>
+</li>
+<li>
+<p>Classes</p>
+<ul>
+<li>Symbolic Reasoning Agents
+<ul>
+<li>Make decisions via <strong>symbol manipulation</strong></li>
+<li>Agents use explicit logical reasoning</li>
+</ul>
+</li>
+<li>Reactive Agents
+<ul>
+<li>Learning</li>
+<li>Based on the environment</li>
+</ul>
+</li>
+<li>Hybrid agent</li>
+</ul>
+</li>
+</ul>
+<h2 id="symbolic-reasoning-agents"><a aria-hidden="true" class="anchor-heading" href="#symbolic-reasoning-agents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Symbolic Reasoning Agents</h2>
+<ul>
+<li>A particular type of <strong>knowledge-based system</strong></li>
+<li>Deliberative (Có chủ đích) agent
+<ul>
+<li>A symbolic model of the world</li>
+<li>Makes decisions</li>
+<li>Issues
+<ul>
+<li>The transduction problem: identifying objects (limited)</li>
+<li>The representation problem: represent objects (large amount of information)</li>
+<li>Symbol manipulation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="deductive-reasoning-agents"><a aria-hidden="true" class="anchor-heading" href="#deductive-reasoning-agents"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Deductive Reasoning Agents</h2>
+<ul>
+<li>Making decisions based on theorem proving</li>
+<li>Notations
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-20-10-31-08.png"></li>
+<li>Database: internal states</li>
+<li>Theory is used to prove</li>
+</ul>
+</li>
+<li><a href="/multi-agent-system/notes/FlDl9gx2mBtFM41D123aX#agents-with-states">Agents with States</a>
+<ul>
+<li>Next function:
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-20-10-32-42.png"></li>
+</ul>
+</li>
+<li>Action function:
+<ul>
+<li>Find an action explicitly <strong>prescribed</strong>
+<ul>
+<li>Returns the action if it is proved</li>
+</ul>
+</li>
+<li>Find an action not excluded
+<ul>
+<li><img src="/multi-agent-system/./assets/images/2021-12-20-10-38-02.png"></li>
+<li>Returns the action if NotDo(action) can not be proved</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Problems &#x26; Solutions
+<ul>
+<li>Convert inputs to perceptions (weaken the logic; use symbolic, non-logical representations)</li>
+<li>Shift the emphasis of reasoning from run time to <strong>design time</strong></li>
+</ul>
+</li>
+</ul>
+<h1 id="agent-oriented-programming"><a aria-hidden="true" class="anchor-heading" href="#agent-oriented-programming"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Agent oriented programming</h1>
+<ul>
+<li>Keys:
+<ul>
+<li>Programming in terms of intentional (chủ đích) notions</li>
+</ul>
+</li>
+</ul>
+<h2 id="agent0"><a aria-hidden="true" class="anchor-heading" href="#agent0"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Agent0</h2>
+<ul>
+<li>
+<p>Agent:</p>
+<ul>
+<li>a set of capabilities</li>
+<li>a set of initial beliefs</li>
+<li>a set of initial commitments</li>
+<li>a set of <strong>commitment rules</strong></li>
+</ul>
+</li>
+<li>
+<p>Commitment rule</p>
+<ul>
+<li>components
+<ul>
+<li>a message condition</li>
+<li>a mental condition</li>
+<li>an action</li>
+</ul>
+</li>
+<li>paraphrase
+<ul>
+<li>if i receive a message from <strong>agent</strong> 
+<ul>
+<li>Which requests me to do <strong>action</strong> at <strong>time</strong></li>
+</ul>
+</li>
+<li>I believe that
+<ul>
+<li><strong>agent</strong> is a friend</li>
+<li>I <strong>can</strong> do the action</li>
+<li>at <strong>time</strong>, I am <strong>not commited</strong> to doing any other action</li>
+</ul>
+</li>
+<li>Then I commit to doing <strong>action</strong> at <strong>time</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>Decision cycle</p>
+<ul>
+<li>the message condition => The messages the agent has received</li>
+<li>the mental condition => The beliefs of the agent</li>
+<li>if the <strong>rule fires</strong>, the agent becomes commited to the action</li>
+</ul>
+</li>
+<li>
+<p>Action types</p>
+<ul>
+<li>Private</li>
+<li>Communicative</li>
+</ul>
+</li>
+<li>
+<p>Message types</p>
+<ul>
+<li>Requests (commit)</li>
+<li>Unrequests (refrain)</li>
+<li>Inform (pass the information)</li>
+</ul>
+</li>
+</ul>
+<h2 id="placa"><a aria-hidden="true" class="anchor-heading" href="#placa"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PLACA</h2>
+<ul>
+<li>Plan and communicate requests for action via <strong>high-level goals</strong></li>
+<li>In terms of <strong>mental change rules</strong></li>
+</ul>
+<h2 id="metatem"><a aria-hidden="true" class="anchor-heading" href="#metatem"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>MetateM</h2>
+<ul>
+<li>Each agent is given a <strong>temporal logic specification</strong> of the behaviour it should exhibit</li>
+<li>Modal operators: How the truth of propositions changes over time
+<ul>
+<li>World = discrete states</li>
+<li>1 single history, a number of possible futures</li>
+</ul>
+</li>
+</ul>

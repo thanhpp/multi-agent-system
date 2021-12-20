@@ -2,7 +2,7 @@
 id: BnuhRJcMOGIp7ASYnzgfK
 title: Multi-Agent System
 desc: ''
-updated: 1639936813299
+updated: 1639971779311
 created: 1639839870130
 ---
 # Công nghệ tác tử
@@ -78,3 +78,17 @@ created: 1639839870130
   - Types
     - Achivement: to the goal
     - Maintenance: not to fail
+
+## Chapter 3 key notes
+
+- Architecture: modules & interaction between them
+
+- Symbolic Reasoning Agents: Modeling the world using symbols
+
+- Deductive Reasoning Agents:
+  - Theorem proving
+  - Find a possible action by
+    - Prove it works
+    - Prove NotDo(action) can not be proved
+
+- Agent oriented programming: using the intentional notions
